@@ -1,4 +1,6 @@
-﻿def one():
+﻿from collections import OrderedDict
+
+def one():
     
     first_names = ['Shan', 'Dao Ming', 'Hua Ze', 'Xi', 'Mei']
 
@@ -58,6 +60,8 @@ def four():
             wordcount[word]+=1
 
     #One may use 2 list instead of dictionary which is a bit harder. A 2D array is also possible.
+    
+    wordcount = OrderedDict(sorted(wordcount.items(), key = lambda t:t[1],reverse = True))
     for word in wordcount:
         print word + ': ' + str(wordcount[word])
     main()
