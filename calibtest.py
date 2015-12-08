@@ -37,9 +37,8 @@ def three():
     
     numbers = range(1, 101)
     numsum=0
-    for num in numbers:
-        if num % 2 == 0:
-            numsum = numsum + num
+    n = [a for num in range(0,101)if num%2==0]
+    numsum = sum(n)
     print  numsum
     main()
 def four():
