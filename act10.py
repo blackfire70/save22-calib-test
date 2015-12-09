@@ -3,7 +3,6 @@ import sys
 import turtle
 def main():
   args = sys.argv[1:]
-
   if not args:
     print 'usage: \'sort\' [1]Sort by Key with lambda [2]Sort by value with lambda [3]Sort by key with fn [4]Sort by value with fn '
     print '\'turtle\''
@@ -41,7 +40,6 @@ def byKeys(key):
     return key[0]
 def byVal(value):
     return value[1]
-
 def squirtle():
     turtle.penup()
     turtle.left(90)
@@ -56,17 +54,31 @@ def squirtle():
 def calc(num1,op,num2):
     ans=0
     if op=='+':
-        ans=int(num1)+int(num2)
+        ans=add(num1,num2)
     elif op=='-':
-        ans=int(num1)-int(num2)
+        ans=minus(num1,num2)
     elif op=='*':
-        ans=int(num1)*int(num2)
+        ans=multiply(num1,num2)
     elif op==r"/":
-        ans=int(num1)/int(num2)
+        ans=divide(num1,num2)
 
     print str(num1)+" "+op+" "+str(num2)+' = '+str(ans)
     
-    pass
+def add(num1,num2):
+    return int(num1)+int(num2)
+def minus(num1,num2):
+    return int(num1)-int(num2)
+def divide(num1,num2):
+    return int(num1)/int(num2)
+def multiply(num1,num2):
+    int(num1)*int(num2)
+
+
+
+
+
+
+
 if __name__ == '__main__':
   main()
 
