@@ -53,7 +53,20 @@ def squirtle():
     turtle.left(90)
     turtle.forward(150)
     turtle.exitonclick()
+def calc(num1,op,num2):
+    ans=0
+    if op=='+':
+        ans=int(num1)+int(num2)
+    elif op=='-':
+        ans=int(num1)-int(num2)
+    elif op=='*':
+        ans=int(num1)*int(num2)
+    elif op==r"/":
+        ans=int(num1)/int(num2)
 
+    print str(num1)+" "+op+" "+str(num2)+' = '+str(ans)
+    
+    pass
 if __name__ == '__main__':
   main()
 
