@@ -5,13 +5,14 @@ def one():
     first_names = ['Shan', 'Dao Ming', 'Hua Ze', 'Xi', 'Mei']
 
     last_names = ['Cai', 'Si', 'Lei', 'Men', 'Zuo']
-    full_names = []
-    c=0
-    for names in first_names:
-        full_names.append(names + ' ' + last_names[c])
-        c=c+1
-    for names in full_names:
-        print names
+    full_names = [(fn+" " + last_names[i]) for i, fn in enumerate(first_names)]
+    print full_names
+    #c=0
+    #for names in first_names:
+    #    full_names.append(names + ' ' + last_names[c])
+    #    c=c+1
+    #for names in full_names:
+    #    print names
 
     main()
 def two():
