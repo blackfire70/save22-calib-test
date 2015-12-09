@@ -1,27 +1,27 @@
-from collections import OrderedDict
+﻿from collections import OrderedDict
 import sys
 import turtle
 def main():
   args = sys.argv[1:]
 
   if not args:
-    print 'usage: \'Lambda\' [1]Sort by Key with lambda [2]Sort by value with lambda [3]Sort by key with fn [4]Sort by value with fn '
-    print '\'Turtle\''
-    print '\'Calc\' [number] [operation(+ - * /)] [number]'
+    print 'usage: \'sort\' [1]Sort by Key with lambda [2]Sort by value with lambda [3]Sort by key with fn [4]Sort by value with fn '
+    print '\'turtle\''
+    print '\'calc\' [number] [operation(+ - * /)] [number]'
     sys.exit(1)
 
  
-  if args[0] == 'Lambda':
+  if args[0] == 'sort':
     lamb(args[1])
-  elif args[0] =='Turtle':
+  elif args[0] =='turtle':
       squirtle()
-  elif args[0]=='Calc':
+  elif args[0]=='calc':
       calc(args[1],args[2],args[3])
   else:
        print 'Invalid Input'
-       print 'usage: \'Lambda\' [1]Sort by Key with lambda [2]Sort by value with lambda [3]Sort by key with fn [4]Sort by value with fn '
-       print '\'Turtle\''
-       print '\'Calc\' [number] [operation(+ - * /)] [number]'
+       print 'usage: \'sort\' [1]Sort by Key with lambda [2]Sort by value with lambda [3]Sort by key with fn [4]Sort by value with fn '
+       print '\'turtle\''
+       print '\'calc\' [number] [operation(+ - * /)] [number]'
        sys.exit(1)
 def lamb(inp):
     people ={'Shepard':30,'Tali\'Zorah vas Normandy':22,'Liara T\'soni':118,'Kaidan Alenko':25,'Ashley Williams':24,'Jeff Moreau':23,'Kenneth Donnelly':23,'Armando-Owen Bailey':34,'Kelly Chambers':23,'Miranda Lawson':23,'Jack':27,'Mordin Solus':25,'Samara':400,'Grunt':2,'Wreax':30,'Thane Krios':39,'Zaeed Massani':60,'Kasumi Goto':25,'James Vega':29,'Javik':50000,'Legion':34,'EDI':5,'Garrus Vakarian':33,'Jacob Taylor':29,'Steven Hackett':67,'David Anderson':57}
