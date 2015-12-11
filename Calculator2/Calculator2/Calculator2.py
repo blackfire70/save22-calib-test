@@ -24,10 +24,10 @@ def operator(op,num1,num2):
             return func(num1,num2)
     return None
 
-def input1():
+def input1(input = raw_input):
     return int(raw_input('Enter a number: '))
 
-def input2():
+def input2(input = raw_input):
     return int(raw_input('Enter a number: '))
 def inputop(input = raw_input):
     return input('Enter operator: ')
