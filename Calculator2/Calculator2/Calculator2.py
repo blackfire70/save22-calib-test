@@ -8,16 +8,21 @@ def div(num1,num2):
 def mul(num1,num2):
     return num1*num2
 def operator(op,num1,num2):
-    if op=='+':
-        return add(num1,num2)
-    elif op =='-':
-        return sub(num1,num2)
-    elif op == '*':
-        return mul(num1,num2)
-    elif op == '/':
-        return div(num1,num2)
-    else:
-        return None
+    #if op=='+':
+    #    return add(num1,num2)
+    #elif op =='-':
+    #    return sub(num1,num2)
+    #elif op == '*':
+    #    return mul(num1,num2)
+    #elif op == '/':
+    #    return div(num1,num2)
+    #else:
+    #    return None
+    functions = {'+':add,'-':sub,'*':mul,'/':div}
+    func = functions.get(op,None)
+    if func:
+            return func(num1,num2)
+    return None
 
 def input1():
     return int(raw_input('Enter a number: '))
