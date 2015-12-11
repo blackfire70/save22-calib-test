@@ -24,12 +24,12 @@ def input1():
 def input2():
     return int(raw_input('Enter a number: '))
 def inputop():
-    return raw_input('Enter operator')
+    return raw_input('Enter operator: ')
 
 def output(num1,op,num2,ans):
     return "{} {} {} = {}".format(num1,op,num2,ans)
 
-def main():
+def maine():
     num1 = input1()
     op = inputop().strip()
     num2 = input2()
@@ -37,4 +37,4 @@ def main():
     print output(num1,op,num2,ans)
 
 if __name__ == "__main__":
-    main()
+    maine()
