@@ -1,4 +1,7 @@
 def add(num1,num2):
+    #if not isinstance(num1,int):
+    # return None
+    #else:
     return num1+num2
 def sub(num1,num2):
     return num1-num2
@@ -30,6 +33,7 @@ def output(num1,op,num2,ans):
     return "{} {} {} = {}".format(num1,op,num2,ans)
 
 def maine():
+    
     num1 = input1()
     op = inputop().strip()
     num2 = input2()
