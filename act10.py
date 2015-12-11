@@ -18,7 +18,7 @@ def main():
       calc(args[1],args[2],args[3])
   else:
        print 'Invalid Input'
-       print 'usage: \'sort\' [1]Sort by Key with lambda [2]Sort by value with lambda [3]Sort by key with fn [4]Sort by value with fn '
+       print 'usage: \'sort\' [1]jjojjojojkkmm;mlmjhilm ort by value with lambda [3]Sort by key with fn [4]Sort by value with fn '
        print '\'turtle\''
        print '\'calc\' [number] [operation(+ - * /)] [number]'
        sys.exit(1)
@@ -51,23 +51,25 @@ def squirtle():
     #turtle.left(90)
     #turtle.forward(150)
     #turtle.exitonclick()
-    ninja = turtle.Turtle()
-    ninja.speed(10)
+    wartortle = turtle.Turtle()
+    wartortle.speed(30)
 
     for i in range(180):
-        ninja.forward(100)
-        ninja.right(30)
-        ninja.forward(20)
-        ninja.left(60)
-        ninja.forward(50)
-        ninja.right(30)
+        wartortle.penup()
+        wartortle.forward(100)
+        wartortle.pendown()
+        wartortle.right(30)
+        wartortle.forward(20)
+        wartortle.left(60)
+        wartortle.forward(50)
+        wartortle.right(30)
     
-        ninja.penup()
-        ninja.setposition(0, 0)
-        ninja.pendown()
+        wartortle.penup()
+        wartortle.setposition(0, 0)
+        wartortle.pendown()
     
-        ninja.right(2)
-    
+        wartortle.right(2)
+    #sbad
     turtle.done()
     turtle.exitonclick()
 def calc(num1,op,num2):
