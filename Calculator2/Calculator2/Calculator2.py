@@ -29,8 +29,8 @@ def input1():
 
 def input2():
     return int(raw_input('Enter a number: '))
-def inputop():
-    return raw_input('Enter operator: ')
+def inputop(input = raw_input):
+    return input('Enter operator: ')
 
 def output(num1,op,num2,ans):
     return "{} {} {} = {}".format(num1,op,num2,ans)

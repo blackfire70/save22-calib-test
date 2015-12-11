@@ -25,6 +25,11 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(Calculator2.operator('a',7,7),None)
     def test_output(self):
         self.assertEqual(Calculator2.output(5,'*',5,25),'5 * 5 = 25')
+    def test_op(self):
+        self.assertEqual(Calculator2.inputop(self.mock_input),1)
+    def mock_input(self,prompt):
+        return 1
+        
     
     
     
