@@ -22,6 +22,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(Calculator2.operator('-',15,-10),25)
         self.assertEqual(Calculator2.operator('/',16,2),8)
         self.assertEqual(Calculator2.operator('*',7,-3),-21)
+        self.assertEqual(Calculator2.operator('a',7,7),None)
     
     
     
