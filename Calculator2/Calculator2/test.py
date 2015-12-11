@@ -23,6 +23,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(Calculator2.operator('/',16,2),8)
         self.assertEqual(Calculator2.operator('*',7,-3),-21)
         self.assertEqual(Calculator2.operator('a',7,7),None)
+    def test_output(self):
+        self.assertEqual(Calculator2.output(5,'*',5,25),'5 * 5 = 25')
     
     
     
