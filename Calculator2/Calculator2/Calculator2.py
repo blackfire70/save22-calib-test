@@ -1,7 +1,5 @@
 def add(num1,num2):
-    #if not isinstance(num1,int):
-    # return None
-    #else:
+   
     return num1+num2
 def sub(num1,num2):
     return num1-num2
@@ -11,7 +9,7 @@ def mul(num1,num2):
     return num1*num2
 def operator(op,num1,num2):
     if op=='+':
-        return sum(num1,num2)
+        return add(num1,num2)
     elif op =='-':
         return sub(num1,num2)
     elif op == '*':
